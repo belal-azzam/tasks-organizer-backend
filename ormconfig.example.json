@@ -1,0 +1,17 @@
+{
+  "type": "mysql",
+  "host": "database",
+  "port": 3306,
+  "username": "",
+  "password": "",
+  "database": "tasks_organizer",
+  "cli": {
+    "migrationsDir": "src/migration",
+    "entitiesDir": "src/entity"
+  },
+  "migrations": [
+    "dist/migration/*.js"
+  ],
+
+  "entities": ["./dist/*/*/*.entity.js"]
+}
